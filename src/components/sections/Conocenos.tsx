@@ -1,5 +1,4 @@
 import { TrendingUp, Heart, Shield, Leaf } from 'lucide-react';
-import { Logo } from '../Logo';
 import { organigrama } from '@/data/organigrama';
 import type { OrgNode } from '@/data/types';
 
@@ -81,9 +80,13 @@ export function Conocenos() {
     <div className="space-y-12">
       {/* Identity header */}
       <section className="card p-8 md:p-12">
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
-          <div className="flex flex-col items-center gap-4">
-            <Logo variant="icon" className="h-24 w-24" />
+        <div className="flex flex-col md:flex-row items-center md:items-center gap-8">
+          <div className="flex flex-col items-center gap-3">
+            <img 
+              src="/logo.jpeg" 
+              alt="GTH S.A.S. Logo" 
+              className="h-28 w-auto max-w-[200px] object-contain rounded-xl shadow-sm border border-gray-100 p-2 bg-white"
+            />
             <div className="text-center">
               <p className="font-display text-xl font-extrabold text-navy-900">GTH S.A.S.</p>
               <p className="text-xs text-emerald-600 font-medium">
