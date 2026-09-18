@@ -1,4 +1,5 @@
-import { Play, Video } from 'lucide-react';
+import React from 'react';
+import { Video } from 'lucide-react';
 
 export function Recursos() {
   return (
@@ -17,21 +18,15 @@ export function Recursos() {
           </div>
           <div>
             <h3 className="text-base font-bold text-navy-900">Video de inducción</h3>
-            <p className="text-xs text-gray-500 mt-0.5">Disponible próximamente</p>
+            <p className="text-xs text-emerald-600 mt-0.5">Disponible</p>
           </div>
         </div>
 
-        <div className="relative aspect-video bg-navy-900 rounded-xl overflow-hidden flex flex-col items-center justify-center">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(16,185,129,0.16),_transparent_48%)]" />
-          <div className="relative w-16 h-16 rounded-full bg-white/10 border border-white/20 flex items-center justify-center">
-            <Play className="h-7 w-7 text-white/60 ml-1" />
-          </div>
-          <p className="relative text-white/75 text-sm mt-5 font-semibold">
-            El video de inducción se incorporará posteriormente
-          </p>
-          <p className="relative text-white/40 text-xs mt-1">
-            Este espacio está preparado para el contenido oficial de GTH S.A.S.
-          </p>
+        <div className="relative aspect-video bg-black rounded-xl overflow-hidden flex flex-col items-center justify-center shadow-lg">
+          <video controls className="w-full h-full object-contain">
+            <source src="/video.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de video.
+          </video>
         </div>
       </section>
     </div>
