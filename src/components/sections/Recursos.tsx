@@ -1,6 +1,5 @@
 import React from 'react';
 import { Video } from 'lucide-react';
-import videoInduccion from '../../../public/video.mp4';
 
 export function Recursos() {
   return (
@@ -24,8 +23,13 @@ export function Recursos() {
         </div>
 
         <div className="relative aspect-video bg-black rounded-xl overflow-hidden flex flex-col items-center justify-center shadow-lg">
-          <video controls preload="auto" playsInline className="w-full h-full object-contain">
-            <source src={videoInduccion} type="video/mp4" />
+          <video 
+            controls 
+            preload="metadata" 
+            playsInline 
+            className="w-full h-full object-contain"
+          >
+            <source src="./video.mp4" type="video/mp4" />
             Tu navegador no soporta la reproducción de video.
           </video>
         </div>
