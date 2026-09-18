@@ -22,16 +22,14 @@ export function Recursos() {
           </div>
         </div>
 
-        <div className="relative aspect-video bg-black rounded-xl overflow-hidden flex flex-col items-center justify-center shadow-lg">
-          <video 
-            controls 
-            preload="metadata" 
-            playsInline 
-            className="w-full h-full object-contain"
-          >
-            <source src="./video.mp4" type="video/mp4" />
-            Tu navegador no soporta la reproducción de video.
-          </video>
+        <div className="relative aspect-video bg-black rounded-xl overflow-hidden shadow-lg">
+          <iframe 
+            src="https://www.youtube.com/embed/bKHFt2djPOU" 
+            title="Video de inducción GTH S.A.S."
+            className="w-full h-full border-0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
         </div>
       </section>
     </div>
